@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginEnd="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:elevation="4dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_marginRight="16dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="8dp">
+
+    <ImageView
+        android:id="@+id/imageDeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_dimension"
+        android:layout_marginLeft="@dimen/text_margin_dimension"
+        android:layout_marginTop="@dimen/text_margin_dimension"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_dimension"
+        android:layout_marginLeft="@dimen/text_margin_dimension"
+        android:layout_marginTop="@dimen/text_margin_dimension"
+        android:text="TextView"
+        android:textSize="@dimen/title_large"
+        app:layout_constraintStart_toEndOf="@+id/imageDeal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_margin_dimension"
+        android:layout_marginLeft="@dimen/text_margin_dimension"
+        android:layout_marginTop="@dimen/text_margin_dimension"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageDeal"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        app:layout_goneMarginTop="@dimen/text_margin_dimension" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
